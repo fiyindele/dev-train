@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- 
+    Mobile devices: 319px - 480px.
+    iPads and Tablets: 481px - 1200px.
+    Laptops: 1201px - 1600px.
+    Desktops: 1601px and more. 
+  -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./responsiveForm.css" />
   </head>
 
   <body>
     <h1></h1>
-    <h2>Welcome</h2>
-    <div>
+    <div class="formContainer">
       <form action="" method="post">
+        <div class="container"></div>
+        <h2>Welcome</h2>
         <h4>Register</h4>
         <div>
-          <label>Name</label>
-          <input />
-          <label>Email Address</label>
-          <label>New Password</label>
-          <label>Confirm New Password</label>
+          <label
+            >Name
+            <input type="text" />
+          </label>
+          <label
+            >Email Address
+            <input type="email" />
+          </label>
+          <label
+            >New Password
+            <input type="password" />
+          </label>
+          <label
+            >Confirm New Password
+            <input type="password" />
+          </label>
+          <div>
+            <input type="button" id="register" value="Register" />
+          </div>
         </div>
       </form>
     </div>

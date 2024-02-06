@@ -1,0 +1,21 @@
+body {
+  color: black;
+}
+
+@media (max-width: 600px) {
+}
+
+.formContainer {
+  display: flex;
+  gap: 3rem;
+}
+
+form {
+  max-width: 600px;
+  justify-content: center;
+}
+
+#register {
+  color: antiquewhite;
+  background-color: black;
+}
