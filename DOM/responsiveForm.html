@@ -14,31 +14,44 @@
 
   <body>
     <h1></h1>
-    <div class="formContainer">
-      <form action="" method="post">
-        <div class="container"></div>
+    <div class="container">
+      <form class="form" action="" method="post">
         <h2>Welcome</h2>
-        <h4>Register</h4>
+        <h3>Register</h3>
         <div>
-          <label
+          <label for="name"
             >Name
-            <input type="text" />
+            <div class="input">
+              <input id="name" type="text" name="user_name" />
+            </div>
           </label>
-          <label
+        </div>
+        <div>
+          <label for="email"
             >Email Address
-            <input type="email" />
+            <div class="input">
+              <input id="email" type="email" name="user_email" />
+            </div>
           </label>
-          <label
+        </div>
+        <div>
+          <label for="pwd"
             >New Password
-            <input type="password" />
+            <div class="input">
+              <input id="pwd" type="password" name="user_pwd" />
+            </div>
           </label>
-          <label
+        </div>
+        <div>
+          <label for="pwdConfirm"
             >Confirm New Password
-            <input type="password" />
+            <div class="input">
+              <input id="pwdConfirm" type="password" name="user_confirm_pwd" />
+            </div>
           </label>
-          <div>
-            <input type="button" id="register" value="Register" />
-          </div>
+        </div>
+        <div>
+          <button class="button" type="submit">Register</button>
         </div>
       </form>
     </div>
