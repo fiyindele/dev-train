@@ -35,7 +35,31 @@ label {
 }
 
 .button {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid black;
   color: antiquewhite;
   background-color: black;
-  padding: 0 50px 0 50px;
+  border-radius: 10px;
+  padding: 9px 30px;
+  cursor: pointer;
+}
+
+#experimentBtn {
+  font-family: "helvetica neue", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 9px 30px;
+}
+
+.msgBox {
+  width: 242px;
+}
+
+.msgBox p {
+  padding-left: 82px;
+  background-position: 25px center;
+  background-repeat: no-repeat;
 }
