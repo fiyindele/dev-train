@@ -1,7 +1,19 @@
-/* * {
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-} */
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 481px) {
+  .formWrap {
+    padding: 72px 14px 65px;
+  }
+}
 
 @media (min-width: 600px) {
   .form {
@@ -9,28 +21,77 @@
   }
 }
 
-/* .container {
-  display: inline-flex;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  /* display: inline-flex;
   gap: 3rem;
   flex-direction: column;
-  border: 3px solid black;
-} */
+  border: 3px solid black; */
+}
+
+.formWrap {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 42px 55px 45px;
+}
 
 .form {
   margin: 0 auto;
-  width: 400px;
+  width: 100%;
   padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
 }
 
-label {
-  display: inline-block;
+form {
+  display: block;
+}
+
+.form-title {
+  display: block;
+  font-size: 39px;
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.inputValidate {
+  position: relative;
+}
+
+.inputWrap {
+  width: 100%;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 13px;
+  margin-bottom: 27px;
+}
+
+/* label {
+} */
+
+.input-label {
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+input .input {
+  height: 40px;
 }
 
 .input {
-  height: 36px;
-  width: 300px;
+  display: block;
+  width: 100%;
+  background: 0 0;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 0 5px;
   box-sizing: border-box;
 }
 
